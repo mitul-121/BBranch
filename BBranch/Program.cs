@@ -4,11 +4,12 @@ using System.Xml.Linq;
 class BBranch
 {  
     public class Branch
-    {        
+    {
+        //Class for the Branch of the tree
         public List<Branch> branches = new List<Branch>();        
     };
-   
 
+    // calculate the maximum depth
     public static int Depth(Branch root, int depth)
     {
         int result = depth + 1;
